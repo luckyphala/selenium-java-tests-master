@@ -6,7 +6,8 @@
 
   <groupId>com.blogspot.automatethebox</groupId>
   <artifactId>selenium-java-tests</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
 
   <properties>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -48,4 +49,16 @@
       <version>7.1.0</version>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>deployment</id>
+      <name>Releases</name>
+      <url>http://localhost:8081/repository/testing-Rel/</url>
+    </repository>
+    <snapshotRepository>
+      <id>deployment</id>
+      <name>Releases</name>
+      <url>http://localhost:8081/repository/testing-snap/</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
