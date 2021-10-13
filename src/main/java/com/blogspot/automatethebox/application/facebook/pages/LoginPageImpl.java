@@ -36,10 +36,11 @@ public class LoginPageImpl extends LoadableComponent<LoginPageImpl> implements L
     protected void isLoaded() throws Error {
         String actualTitle = driver.getTitle();
         assertTrue(actualTitle.toLowerCase().contains(APP_TITLE_STRING),
-            "Facebook login page not loaded");
+            "Facebook login page not loaded again");
     }
 
     @Override
+    
     public HomePage loginAs(String emailOrPhone, String password) {
         Preconditions.checkNotNull(emailOrPhone, "Email or phone number parameter is null");
         Preconditions.checkNotNull(password, "Password parameter is null");
