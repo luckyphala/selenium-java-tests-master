@@ -52,7 +52,7 @@ public class LoginPageImpl extends LoadableComponent<LoginPageImpl> implements L
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        login.click();
+//        login.click();
         return new HomePageImpl(driver);
     }
 }

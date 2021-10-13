@@ -42,8 +42,8 @@ public class HomePageImpl extends LoadableComponent<HomePageImpl> implements Hom
 
     @Override
     public LoginPage logout() {
-        accountButton.click();
-        logoutButton.click();
+//        accountButton.click();
+//        logoutButton.click();
         return new LoginPageImpl(driver);
     }
 
