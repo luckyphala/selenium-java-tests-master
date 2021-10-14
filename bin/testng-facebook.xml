@@ -7,7 +7,7 @@
 
     <!-- Facebook login username and password-->
     <parameter name="facebook_user_name" value="0788133164"/>
-    <parameter name="facebook_user_password" value="123@abc"/>
+    <parameter name="facebook_user_password" value="1234@abc"/>
 
     <test name="Login/Logout" verbose="10">
         <classes>
